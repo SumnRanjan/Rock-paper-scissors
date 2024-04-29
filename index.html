@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... h-[100%] w-[100%] ">
+  <div id="app">
+  <h1 class="hih1 text-black-500 text-[3rem] leading-[5rem] text-center font-bold font-roboto ">Rock Paper Scissors</h1>
+
+  <div class="choices flex justify-center items-center flex-wrap gap-[3rem] mt-[3rem] ">
+    <div class="choice flex justify-center items-center rounded-full  w-[280px] h-[280px]  hover:bg-fuchsia-300 " id="rock">
+      <img src="./images/rock.png" class="rounded-full  w-[225px] h-[225px] object-cover " />
+    </div>
+
+    <div class="choice flex justify-center items-center rounded-full  w-[280px] h-[280px] hover:bg-fuchsia-300 " id="paper">
+      <img src="./images/paper.png" class="rounded-full  w-[225px] h-[225px] object-cover " />
+    </div>
+    <div class="choice flex justify-center items-center rounded-full   w-[280px] h-[280px] hover:bg-fuchsia-300 "
+      id="scissors">
+      <img src="./images/scissors.png" class="rounded-full  w-[225px] h-[225px] object-cover " />
+    </div>
+  </div>
+
+  <div class="score-board flex  justify-center items-center text-[3rem] mt-[1rem] gap-[5rem] text-center">
+    <div class="score">
+      <p id="user-score" class="text-[4rem]">0</p>
+      <p>You</p>
+    </div>
+    <div class="score">
+      <p id="comp-score" class="text-[4rem]">0</p>
+      <p>Comp</p>
+    </div>
+  </div>
+
+  <div class="msg-container mt-[3rem] flex justify-center items-center">
+    <p id="msg" class="bg-[#4c7bb1]  inline text-[2rem] p-[0.5rem] rounded-lg ">Play your move</p>
+  </div>
+
+  <div class="button1 flex justify-center items-center">
+    <button id="button" class="bg-blue-500 hover:bg-blue-600 text-black  py-2 px-4 rounded-full mt-[2rem] text-[2rem]">Restart Game</button>
+  </div>
+</div>
+  <script type="module" src="/script.js"></script>
+</body>
+
+</html>
